@@ -1,0 +1,19 @@
+page-signin ion-content {
+  background: #605e80 url("../../assets/img/Sign-In.png") no-repeat;
+  background-size: contain;
+  max-width: 750px;
+  height: 1334px; }
+  page-signin ion-content button {
+    background-color: transparent;
+    width: 80%;
+    margin: 0 auto; }
+page-signin .item-md {
+  background-color: transparent; }
+page-signin .list-md {
+  margin: 60% auto 40px;
+  width: 80%; }
+page-signin .text-input-md {
+  color: #fff;
+  text-align: center; }
+
+/*# sourceMappingURL=signin.css.map */

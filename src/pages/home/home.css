@@ -1,0 +1,17 @@
+page-home .list-md {
+  margin: 100% auto;
+  width: 65%; }
+  page-home .list-md button {
+    width: 47%;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 20px 0; }
+  page-home .list-md ion-item:first-child button {
+    width: 97%; }
+page-home .item-md {
+  background-color: transparent;
+  color: #fff; }
+
+/*# sourceMappingURL=home.css.map */

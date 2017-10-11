@@ -1,0 +1,10 @@
+body {
+  color: #ffffff; }
+
+.background {
+  background: #605e80 url("../../assets/img/welcome.png") no-repeat;
+  background-size: contain;
+  max-width: 750px;
+  height: 1334px; }
+
+/*# sourceMappingURL=app.css.map */
