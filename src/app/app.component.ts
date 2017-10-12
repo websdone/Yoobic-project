@@ -2,10 +2,12 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
 import { HomePage } from '../pages/home/home';
 import { signinPage } from '../pages/signin/signin';
-import { comingsoonPage } from '../pages/comingsoon/comingsoon';
+import { DetailsListPage } from '../pages/detailslist/details-list';
+import { masterlistPage } from '../pages/masterlist/masterlist';
+import {comingsoonPage} from "../pages/comingsoon/comingsoon";
+
 
 @Component({
   templateUrl: 'app.html'
@@ -23,10 +25,10 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Dashboard', component: HomePage },
-      { title: 'Photos', component: signinPage },
-      { title: 'Available Missions', component: comingsoonPage },
+      { title: 'Photos', component: comingsoonPage },
+      { title: 'Available Missions', component: masterlistPage },
       { title: 'My Missions', component: comingsoonPage },
-      { title: 'Chat', component: comingsoonPage }
+      { title: 'Chat', component: comingsoonPage },
     ];
 
   }

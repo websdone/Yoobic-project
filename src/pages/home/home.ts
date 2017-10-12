@@ -8,7 +8,6 @@ import { signinPage } from '../signin/signin';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
   constructor(public navCtrl: NavController) {
 
   }

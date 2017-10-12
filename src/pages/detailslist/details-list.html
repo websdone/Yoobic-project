@@ -1,0 +1,26 @@
+<!--<ion-list>-->
+  <!--<ion-item *ngFor="let film of (films | async)?.results" (click)="openDetails(film)">-->
+    <!--<ion-thumbnail item-start>-->
+      <!--<img src="img/thumbnail-totoro.png">-->
+    <!--</ion-thumbnail>-->
+    <!--<h2> {{ film.title }}</h2>-->
+    <!--<p> {{ film.producer</p>-->
+    <!--<button ion-button clear item-end>View</button>-->
+  <!--</ion-item>-->
+<!--</ion-list>-->
+
+
+<ion-header>
+  <button (click)="goBack()">Back </button>
+  <ion-navbar color="primary">
+    <ion-title>{{ film.title }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      {{ film.opening_crawl }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
