@@ -5,10 +5,10 @@ import { MenuController } from 'ionic-angular';
 import { AuthProvider } from '../../providers/auth/auth.service';
 
 @Component({
-  selector: 'page-signin',
-  templateUrl: 'signin.html'
+  selector: 'page-signup',
+  templateUrl: 'signup.html'
 })
-export class signinPage {
+export class signupPage {
   email: string;
   password: string;
 

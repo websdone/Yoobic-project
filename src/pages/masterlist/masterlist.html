@@ -6,23 +6,17 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content  padding>
+<ion-content>
   <ion-list>
     <ion-item *ngFor="let film of (films | async)?.results">
       <ion-thumbnail item-start>
-        <img src="img/thumbnail-totoro.png">
+        <!-- Temporary image used as Api does not have images -->
+        <img src="../../assets/img/star-wars.jpeg" title="Star Wars">
       </ion-thumbnail>
       <h2> {{ film.title }}</h2>
+      <p> {{ film.director }} </p>
       <p> {{ film.producer }} </p>
       <button ion-button clear item-end (click)="openDetails(film)">View</button>
     </ion-item>
-
   </ion-list>
-
-  <!--<ion-card  *ngFor="let film of (films | async)?.results">-->
-    <!--<ion-card-content>-->
-      <!--<h1> {{ film.title }}</h1>-->
-      <!--<p> {{ film.opening_crawl }}</p>-->
-    <!--</ion-card-content>-->
-  <!--</ion-card>-->
 </ion-content>

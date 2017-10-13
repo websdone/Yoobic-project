@@ -18,19 +18,20 @@ export class masterlistPage {
   films: Observable<any>;
 
   constructor(public navCtrl: NavController, public apiData: ApiData, public loadingController: LoadingController) {
-    // Data takes sometime to load - adding loader
     let loader = this.loadingController.create({
       content: "content loading"
     });
-    loader.present();
 
-    // Get data
-    this.films = this.apiData.getFilms();
-
-    // dismiss loader
-    setTimeout(function () {
-      loader.dismiss();
-    },2000);
+    loader.present().then(() => {
+      // Get data
+      this.films = this.apiData.getFilms();
+      console.log("Data loading");
+      setTimeout(function () {
+        loader.dismiss().then(() => {
+          console.log("Loading dismissed");
+        });
+      },1000);
+    });
   }
 
   openDetails(film) {

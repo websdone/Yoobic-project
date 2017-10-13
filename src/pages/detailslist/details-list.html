@@ -1,26 +1,25 @@
-<!--<ion-list>-->
-  <!--<ion-item *ngFor="let film of (films | async)?.results" (click)="openDetails(film)">-->
-    <!--<ion-thumbnail item-start>-->
-      <!--<img src="img/thumbnail-totoro.png">-->
-    <!--</ion-thumbnail>-->
-    <!--<h2> {{ film.title }}</h2>-->
-    <!--<p> {{ film.producer</p>-->
-    <!--<button ion-button clear item-end>View</button>-->
-  <!--</ion-item>-->
-<!--</ion-list>-->
-
 
 <ion-header>
   <button (click)="goBack()">Back </button>
   <ion-navbar color="primary">
-    <ion-title>{{ film.title }}</ion-title>
+    <ion-title>
+      TEST : {{ film.title }}
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <ion-card>
+    <ion-card-header>
+      <p> Director: {{ film.director }} </p>
+      <p> Producer: {{ film.producer }} </p>
+      <p> Release Date: {{ film.release_date }} </p>
+      <p> Episode ID: {{ film.episode_id }} </p>
+    </ion-card-header>
     <ion-card-content>
-      {{ film.opening_crawl }}
+      <!-- Temporary image used as Api does not have images -->
+      <img src="../../assets/img/starwars.png" title="Star Wars" >
+      <p>{{ film.opening_crawl }}</p>
     </ion-card-content>
   </ion-card>
 </ion-content>
